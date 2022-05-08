@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Space Mono', monospace;
+
+  div {
+    display: block;
+  }
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+main {
+
+  position: relative;
+
+  .wrapper {
+
+    .content {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 30px;
+
+      height: 100vh;
+
+      position: relative;
+
+
+      .my-name {
+        color: #e6007a;
+      }
+
+      h1 {
+        font-size: 45px;
+        font-weight: bolder;
+      }
+
+      p {
+        font-size: 25px;
+      }
+    }
+
+
+    .main-bg {
+      z-index: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("assets/mesh_graph_2.png") no-repeat center center;
+      opacity: 0.3;
+
+      pointer-events: none;
+    }
+
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #5d5d5d;
+
+    .heart {
+      color: #e6007a;
+    }
+
+    .rust {
+      color: #b7410e;
+    }
+  }
+
+}
+
+.writer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  .title {
+    display: flex;
+    .downscore {
+      display: block;
+      border-bottom: 8px solid #e6007a;
+      width: 20px;
+      margin-bottom: 16px;
+    }
+  }
+
+
+}
+
+.writer {
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+
+  p {
+    display: block;
+    text-align: center;
+  }
+
+  .caret {
+    display: block;
+    border-right: 8px solid #e6007a;
+  }
+
+  .hidden-caret {
+    display: block;
+    border-right: 8px solid transparent;
+  }
+
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 350px;
+
+  & > div > a {
+    transition: all 200ms ease;
+    font-size: 17px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      fill: #fff !important;
+    }
+  }
+
+  .tw {
+    &:hover {
+      color: #1DA1F2;
+    }
+  }
+
+  .lk {
+    &:hover {
+      color: #0077b5;
+    }
+  }
+
+  .mm {
+    &:hover {
+      color: #01feff;
+    }
+  }
+}
+
+
+.icon-twitter {
+  mask-size: cover;
+  mask-image: url("assets/twitter-brands.svg");
+  background-color: #1DA1F2;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-top: 2px;
+}
+
+.icon-linkedin {
+  mask-size: cover;
+  mask-image: url("assets/linkedin-in-brands.svg");
+  background-color: #0077b5;
+  width: 20px;
+  height: 20px;
+
+  display: block;
+}
