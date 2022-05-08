@@ -136,7 +136,7 @@ a {
 .social {
   display: flex;
   justify-content: space-evenly;
-  width: 350px;
+  width: 460px;
 
   & > div > a {
     transition: all 200ms ease;
@@ -158,6 +158,12 @@ a {
   .lk {
     &:hover {
       color: #0077b5;
+    }
+  }
+
+  .gh {
+    &:hover {
+      color: #171515;
     }
   }
 
