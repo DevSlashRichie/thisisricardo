@@ -94,6 +94,7 @@ main {
 
   .title {
     display: flex;
+
     .downscore {
       display: block;
       border-bottom: 8px solid #e6007a;
@@ -137,6 +138,7 @@ a {
   display: flex;
   justify-content: space-evenly;
   width: 460px;
+  max-width: 100%;
 
   & > div > a {
     transition: all 200ms ease;
@@ -193,4 +195,34 @@ a {
   height: 20px;
 
   display: block;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .social > div > a {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    .content {
+      h1 {
+        font-size: 35px !important;
+      }
+
+      p {
+        font-size: 22px !important;
+      }
+    }
+  }
+
+
+  .writer-wrapper {
+
+    .title {
+      .downscore {
+        margin-bottom: 14px;
+      }
+    }
+  }
+
 }
