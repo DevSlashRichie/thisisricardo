@@ -140,7 +140,7 @@ impl Component for Model {
                     <div class="social">
                         <div><a class="tw" href="https://twitter.com/SiendoRicardo" target="_blank">{"Twitter"}</a></div>
                         <div><a class="lk" href="https://www.linkedin.com/in/ricardo-rodr%C3%ADguez-medina-775a8628/" target="_blank">{"Linkedin"}</a></div>
-                        <div><a class="gh" href="https://github.com/RicardormDev" target="_blank">{"Github"}</a></div>
+                        <div><a class="gh" href="https://github.com/SiendoRicardo" target="_blank">{"Github"}</a></div>
                         <div><a class="mm" href="https://mymetaverse.io" target="_blank">{"MyMetaverse"}</a></div>
                     </div>
                     </div>
