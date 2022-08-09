@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+}
+* div {
+  display: block;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+main {
+  position: relative;
+}
+main .wrapper .content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  height: 100vh;
+  position: relative;
+}
+main .wrapper .content .my-name {
+  color: #e6007a;
+}
+main .wrapper .content h1 {
+  font-size: 45px;
+  font-weight: bolder;
+}
+main .wrapper .content p {
+  font-size: 25px;
+}
+main .wrapper .main-bg {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("assets/mesh_graph_2.png") no-repeat center center;
+  opacity: 0.3;
+  pointer-events: none;
+}
+main footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: #5d5d5d;
+}
+main footer .heart {
+  color: #e6007a;
+}
+main footer .rust {
+  color: #b7410e;
+}
+
+.writer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.writer-wrapper .title {
+  display: flex;
+}
+.writer-wrapper .title .downscore {
+  display: block;
+  border-bottom: 8px solid #e6007a;
+  width: 20px;
+  margin-bottom: 16px;
+}
+
+.writer {
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+}
+.writer p {
+  display: block;
+  text-align: center;
+}
+.writer .caret {
+  display: block;
+  border-right: 8px solid #e6007a;
+}
+.writer .hidden-caret {
+  display: block;
+  border-right: 8px solid transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 460px;
+  max-width: 100%;
+}
+.social > div > a {
+  transition: all 200ms ease;
+  font-size: 17px;
+}
+.social > div > a img {
+  width: 30px;
+  height: 30px;
+  fill: #fff !important;
+}
+.social .tw:hover {
+  color: #1DA1F2;
+}
+.social .lk:hover {
+  color: #0077b5;
+}
+.social .gh:hover {
+  color: #171515;
+}
+.social .mm:hover {
+  color: #01feff;
+}
+
+.icon-twitter {
+  mask-size: cover;
+  mask-image: url("assets/twitter-brands.svg");
+  background-color: #1DA1F2;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-top: 2px;
+}
+
+.icon-linkedin {
+  mask-size: cover;
+  mask-image: url("assets/linkedin-in-brands.svg");
+  background-color: #0077b5;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  .social > div > a {
+    font-size: 14px;
+  }
+
+  .wrapper .content h1 {
+    font-size: 35px !important;
+  }
+  .wrapper .content p {
+    font-size: 22px !important;
+  }
+
+  .writer-wrapper .title .downscore {
+    margin-bottom: 14px;
+  }
+}
